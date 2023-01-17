@@ -105,8 +105,9 @@ align-items: center;
     align-items: center;
 }
 .nav-container .link{
+    display: block;
     padding-top: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .nav{
@@ -128,12 +129,18 @@ align-items: center;
     margin-right: 40px;
 }
 
-.nav .link:hover{
+.nav-container .link:hover{
+    padding-bottom: 0;
+}
+
+.section .nav .link:hover::after{
     content: "";
-    display: block;
-    /* margin-top: 24px; */
-    /* padding-top: 24px; */
-    border-bottom: 4px solid var(--pressed-state-color);
+    display:block;
+    margin-top: 20px;
+    width:auto;
+    height: 4px;
+    background: var(--pressed-state-color);
+    border-radius: 2px;
 }
 
 .adress{
